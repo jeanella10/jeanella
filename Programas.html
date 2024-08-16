@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li {
+            width: 200px;
+        }
+        nav ul li ul li a {
+            padding: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            color: #333;
+            margin-top: 0;
+        }
+        .section p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .back-to-home {
+            display: inline-block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .back-to-home:hover {
+            background-color: #575757;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>PROGRAMA RESUMEN</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="PaginaPrincipal.html">Inicio</a></li>
+            <li class="has-submenu">
+                <a href="#">Enlaces IA</a>
+                <ul class="submenu">
+                    <li><a href="https://github.com/">GitHub</a></li>
+                    <li><a href="https://chatgpt.com/?oai-dm=1">chatGPT</a></li>
+                    <li><a href="https://replit.com/">Repl.it</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Programas</a>
+                <ul>
+                    <li><a href="#producto1">GitHub</a></li>
+                    <li><a href="#producto2">Codex</a></li>
+                    <li><a href="#producto3">Replit</a></li>
+                </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="acercademi.html">Acerca de Mí</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="producto1" class="section">
+            <h3>GITHUB</h3>
+            <p>Desarrollado por GitHub en colaboración con OpenAI, GitHub Copilot es un asistente de codificación que sugiere fragmentos de código y funciones mientras escribes. Utiliza un modelo de lenguaje para proporcionar sugerencias contextuales y completar líneas de código</p>
+        </section>
+        <section id="producto2" class="section">
+            <h3>CODEX</h3>
+            <p>Codex es el modelo de lenguaje subyacente en GitHub Copilot y se especializa en la generación de código. Puede generar código en varios lenguajes a partir de descripciones en lenguaje natural.</p>
+        </section>
+        <section id="producto3" class="section">
+            <h3>REPLIT</h3>
+            <p>Un entorno de desarrollo en línea que utiliza IA para ayudar en la codificación y proporcionar asistencia contextual.</p>
+        </section>
+        <a href="PaginaPrincipal.html" class="back-to-home">Regresar a la Página Principal</a>
+    </div>
+</body>
+</html>
